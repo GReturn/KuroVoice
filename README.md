@@ -1,5 +1,5 @@
 # KuroVoice
-A simple run-of-the-mill speech recognition project capable of listening and replying. Written in C#; created in .NET Core WinForms.
+A simple run-of-the-mill speech recognition project capable of listening and replying using the [System.Speech](https://www.nuget.org/packages/System.Speech/ "Link to NuGet: System.Speech") NuGet package. Written in C#; created in .NET Core WinForms.
 
 ### Features:
 - Control buttons (start/stop).
