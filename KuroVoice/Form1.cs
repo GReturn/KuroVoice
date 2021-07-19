@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using System.Speech.Recognition;
 using System.Speech.Synthesis;
 
@@ -16,6 +8,7 @@ namespace KuroVoice
     public partial class Form1 : Form
     {
         readonly SpeechRecognitionEngine engineSpeechRecog = new();
+        readonly SpeechSynthesizer speechSynthesizer = new();
 
         public Form1()
         {
@@ -44,13 +37,17 @@ namespace KuroVoice
                 case "hi":
                     richTextBoxInput.Text += "\nhi.";
                     richTextBoxOutput.Text += "\nhello.";
+                    speechSynthesizer.Speak("hello.");
                     break;
                 case "print":
                     richTextBoxInput.Text += "\nprint";
                     richTextBoxOutput.Text += "\nprinting";
+                    speechSynthesizer.Speak("printing");
                     break;
             }
         }
+
+        #region Button Events
 
         private void startButton_Click(object sender, EventArgs e)
         {
@@ -65,5 +62,7 @@ namespace KuroVoice
             startButton.Enabled = true;
             stopButton.Enabled = false;
         }
+
+        #endregion
     }
 }
