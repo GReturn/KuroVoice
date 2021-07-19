@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.Speech.Recognition;
+using System.Speech.Synthesis;
 
 namespace KuroVoice
 {
     public partial class Form1 : Form
     {
-        readonly SpeechRecognitionEngine engineSpeechRecog = new SpeechRecognitionEngine();
+        readonly SpeechRecognitionEngine engineSpeechRecog = new();
 
         public Form1()
         {
