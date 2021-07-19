@@ -10,4 +10,4 @@ A simple run-of-the-mill speech recognition chatbot capable of listening and rep
 
 ### ❗ Disclaimers:
 - This is a quick side-project. I'm not accepting issues and PRs. Improvements and bug fixes will be done the next time I'm bored. 
-- This software does not use any ML (Machine Learning) model or concept when generating a reply. Data is hard-coded.
+- This software does not use any ML (Machine Learning) model or concept. What you will say and receive must be hard-coded.
